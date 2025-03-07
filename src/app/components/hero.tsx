@@ -104,8 +104,8 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          The Ultimate Fusion of Technology, Innovation, and Creativity. Join
-          the Future at PSG Tech’s CSEA Flagship Event.
+          Online Registrations are closed now !!!
+          You can register at the registration desk at E-Block 3rd flood or opposite to F-Block canteen
         </motion.p>
         <motion.div
           className="flex space-x-4"
@@ -123,15 +123,11 @@ export default function Hero() {
           >
             Explore Events
           </Button>
-          {!isAuthenticated ? (
-            <Button asChild variant="secondary">
-              <a href="/register">Register Now</a>
-            </Button>
-          ) : (
+          
             <Button asChild variant="secondary">
               <a href="/dashboard">Event Timeline</a>
             </Button>
-          )}
+          
         </motion.div>
       </div>
     </div>
