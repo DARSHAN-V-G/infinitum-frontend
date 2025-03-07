@@ -3,11 +3,9 @@
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { useAuth } from "@/lib/AuthContext";
 
 export default function Hero() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const { isAuthenticated } = useAuth();
 
   useEffect(() => {
     if (!canvasRef.current) return;
